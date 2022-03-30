@@ -1,4 +1,5 @@
 import { ArrowSmLeftIcon } from '@heroicons/react/solid'
+import { motion } from 'framer-motion'
 import CardSection from '../components/CardSection'
 import Header from '../components/Header'
 
@@ -9,10 +10,12 @@ export default function Home() {
         <ArrowSmLeftIcon className="w-5 h-5" />
         <div>Back to work</div>
       </div>
-      <Header />
-      <CardSection />
-      <div className="text-center text-stone-400 text-xs font-regular pt-4 mt-12">Time Spent on this: 6 hours</div>
-      <div className="text-center text-stone-400 text-xs font-regular pt-2 pb-4 mb-12">Built with Next and Tailwind. Built with 💜 by Jack Willars. 2022.</div>
+      <motion.div initial={{ opacity: 0, y: 75 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, type: 'spring' }}>
+        <Header />
+        <CardSection />
+      </motion.div>
+      <div className="pt-4 mt-12 text-xs text-center text-stone-400 font-regular">Time Spent on this: 6 hours</div>
+      <div className="pt-2 pb-4 mb-12 text-xs text-center text-stone-400 font-regular">Built with Next and Tailwind. Built with 💜 by Jack Willars. 2022.</div>
     </div>
   )
 }

@@ -1,7 +1,6 @@
 import { Tooltip } from "@chakra-ui/tooltip";
 import { motion } from "framer-motion";
 const CardSection = () => {
-    const shadow = "0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,.5)"
     return (
         <div className="masonry">
             <motion.div className="break-inside rounded-[20px] px-4 pt-2 pb-2 bg-violet-600 flex-none align-middle mt-0 drop-shadow-2xl items-start h-auto relative">
