@@ -11,8 +11,8 @@ export default function Home() {
       </div>
       <Header />
       <CardSection />
-      <div class="text-center text-stone-400 text-xs font-regular pt-4 mt-12">Time Spent on this: 6 hours</div>
-      <div class="text-center text-stone-400 text-xs font-regular pt-2 pb-4 mb-12">Built with Next and Tailwind. Built with 💜 by Jack Willars. 2022.</div>
+      <div className="text-center text-stone-400 text-xs font-regular pt-4 mt-12">Time Spent on this: 6 hours</div>
+      <div className="text-center text-stone-400 text-xs font-regular pt-2 pb-4 mb-12">Built with Next and Tailwind. Built with 💜 by Jack Willars. 2022.</div>
     </div>
   )
 }
