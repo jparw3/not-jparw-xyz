@@ -76,11 +76,11 @@ const CardSection = () => {
                     <motion.div whileHover={{ y: -5, transition: { duration: 0.3 } }}>
                         <a
                             target="blank"
-                            href="https://owe-jparw.vercel.app"
+                            href="https://owe.jparw.xyz"
                             className="relative z-1"
                         >
                             <div className="px-2 py-4 bg-emerald-900 rounded-[12px] text-white font-medium text-sm w-[100%] mx-auto text-center">
-                                owe-jparw.vercel.app ↗︎
+                                owe.jparw.xyz ↗︎
                             </div>
                         </a>
                     </motion.div>
