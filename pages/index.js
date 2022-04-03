@@ -1,15 +1,18 @@
 import { ArrowSmLeftIcon } from '@heroicons/react/solid'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import CardSection from '../components/CardSection'
 import Header from '../components/Header'
 
 export default function Home() {
   return (
     <div className="flex-col flex mx-auto px-5 transition-all sm:px-12 max-w-[800px] cursor-default text-gray-500">
-      <div className="flex items-center space-x-1 text-sm">
-        <ArrowSmLeftIcon className="w-5 h-5" />
-        <div>Back to work</div>
-      </div>
+      <Link href="https://jparw.xyz" passHref>
+        <div className="flex items-center space-x-1 text-sm">
+          <ArrowSmLeftIcon className="w-5 h-5" />
+          <div>Back to work</div>
+        </div>
+      </Link>
       <motion.div initial={{ opacity: 0, y: 75 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, type: 'spring' }}>
         <Header />
         <CardSection />
